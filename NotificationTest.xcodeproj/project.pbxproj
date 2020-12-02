@@ -21,6 +21,11 @@
 		6609168F2577B8D500F42AD4 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6609168E2577B8D500F42AD4 /* NotificationService.swift */; };
 		660916932577B8D500F42AD4 /* NotificationTestService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6609168C2577B8D500F42AD4 /* NotificationTestService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		6609169B2577B90F00F42AD4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6609169A2577B90F00F42AD4 /* HomeViewController.swift */; };
+		6633A3E0257816FF00187EC5 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6633A3DF257816FF00187EC5 /* RxSwift */; };
+		6633A3E2257816FF00187EC5 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 6633A3E1257816FF00187EC5 /* RxRelay */; };
+		6633A3E4257816FF00187EC5 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 6633A3E3257816FF00187EC5 /* RxCocoa */; };
+		6633A3E6257816FF00187EC5 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 6633A3E5257816FF00187EC5 /* RxBlocking */; };
+		6633A3EC2578175D00187EC5 /* NSObject-Rx in Frameworks */ = {isa = PBXBuildFile; productRef = 6633A3EB2578175D00187EC5 /* NSObject-Rx */; };
 		66383F2A2577E4C300EE4040 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 66383F292577E4C300EE4040 /* SnapKit */; };
 /* End PBXBuildFile section */
 
@@ -81,7 +86,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6633A3E0257816FF00187EC5 /* RxSwift in Frameworks */,
+				6633A3E6257816FF00187EC5 /* RxBlocking in Frameworks */,
 				6609166C2577AE9200F42AD4 /* Then in Frameworks */,
+				6633A3E4257816FF00187EC5 /* RxCocoa in Frameworks */,
+				6633A3E2257816FF00187EC5 /* RxRelay in Frameworks */,
+				6633A3EC2578175D00187EC5 /* NSObject-Rx in Frameworks */,
 				66383F2A2577E4C300EE4040 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -190,6 +200,11 @@
 			packageProductDependencies = (
 				6609166B2577AE9200F42AD4 /* Then */,
 				66383F292577E4C300EE4040 /* SnapKit */,
+				6633A3DF257816FF00187EC5 /* RxSwift */,
+				6633A3E1257816FF00187EC5 /* RxRelay */,
+				6633A3E3257816FF00187EC5 /* RxCocoa */,
+				6633A3E5257816FF00187EC5 /* RxBlocking */,
+				6633A3EB2578175D00187EC5 /* NSObject-Rx */,
 			);
 			productName = NotificationTest;
 			productReference = 6609164D2577A10100F42AD4 /* NotificationTest.app */;
@@ -261,6 +276,8 @@
 			packageReferences = (
 				6609166A2577AE9200F42AD4 /* XCRemoteSwiftPackageReference "Then" */,
 				66383F282577E4C300EE4040 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				6633A3DE257816FF00187EC5 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				6633A3EA2578175D00187EC5 /* XCRemoteSwiftPackageReference "NSObject-Rx" */,
 			);
 			productRefGroup = 6609164E2577A10100F42AD4 /* Products */;
 			projectDirPath = "";
@@ -645,6 +662,22 @@
 				minimumVersion = 2.7.0;
 			};
 		};
+		6633A3DE257816FF00187EC5 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
+		6633A3EA2578175D00187EC5 /* XCRemoteSwiftPackageReference "NSObject-Rx" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:RxSwiftCommunity/NSObject-Rx.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
 		66383F282577E4C300EE4040 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:SnapKit/SnapKit.git";
@@ -660,6 +693,31 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 6609166A2577AE9200F42AD4 /* XCRemoteSwiftPackageReference "Then" */;
 			productName = Then;
+		};
+		6633A3DF257816FF00187EC5 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6633A3DE257816FF00187EC5 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		6633A3E1257816FF00187EC5 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6633A3DE257816FF00187EC5 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		6633A3E3257816FF00187EC5 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6633A3DE257816FF00187EC5 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		6633A3E5257816FF00187EC5 /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6633A3DE257816FF00187EC5 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		6633A3EB2578175D00187EC5 /* NSObject-Rx */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6633A3EA2578175D00187EC5 /* XCRemoteSwiftPackageReference "NSObject-Rx" */;
+			productName = "NSObject-Rx";
 		};
 		66383F292577E4C300EE4040 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;

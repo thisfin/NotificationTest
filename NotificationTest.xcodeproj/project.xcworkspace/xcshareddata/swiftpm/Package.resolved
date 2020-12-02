@@ -2,6 +2,24 @@
   "object": {
     "pins": [
       {
+        "package": "NSObject-Rx",
+        "repositoryURL": "git@github.com:RxSwiftCommunity/NSObject-Rx.git",
+        "state": {
+          "branch": null,
+          "revision": "3dc30072b740ec35a3949ac8a8217f590a7c59b7",
+          "version": "5.1.1"
+        }
+      },
+      {
+        "package": "RxSwift",
+        "repositoryURL": "git@github.com:ReactiveX/RxSwift.git",
+        "state": {
+          "branch": null,
+          "revision": "002d325b0bdee94e7882e1114af5ff4fe1e96afa",
+          "version": "5.1.1"
+        }
+      },
+      {
         "package": "SnapKit",
         "repositoryURL": "git@github.com:SnapKit/SnapKit.git",
         "state": {
