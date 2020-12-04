@@ -27,6 +27,7 @@
 		6633A3E6257816FF00187EC5 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 6633A3E5257816FF00187EC5 /* RxBlocking */; };
 		6633A3EC2578175D00187EC5 /* NSObject-Rx in Frameworks */ = {isa = PBXBuildFile; productRef = 6633A3EB2578175D00187EC5 /* NSObject-Rx */; };
 		66383F2A2577E4C300EE4040 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 66383F292577E4C300EE4040 /* SnapKit */; };
+		66383F322578BA1500EE4040 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66383F312578BA1500EE4040 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		6609168E2577B8D500F42AD4 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		660916902577B8D500F42AD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6609169A2577B90F00F42AD4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		66383F312578BA1500EE4040 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +148,7 @@
 				660916592577A10300F42AD4 /* Assets.xcassets */,
 				6609165B2577A10300F42AD4 /* LaunchScreen.storyboard */,
 				6609165E2577A10300F42AD4 /* Info.plist */,
+				66383F312578BA1500EE4040 /* BaseViewController.swift */,
 			);
 			path = NotificationTest;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66383F322578BA1500EE4040 /* BaseViewController.swift in Sources */,
 				660916552577A10100F42AD4 /* ViewController.swift in Sources */,
 				660916512577A10100F42AD4 /* AppDelegate.swift in Sources */,
 				660916532577A10100F42AD4 /* SceneDelegate.swift in Sources */,
