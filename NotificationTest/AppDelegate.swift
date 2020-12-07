@@ -11,23 +11,33 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        JPUSHService.register(forRemoteNotificationConfig: JPUSHRegisterEntity().then {
-            $0.types = NSInteger(JPAuthorizationOptions.alert.rawValue |
-                JPAuthorizationOptions.badge.rawValue |
-                JPAuthorizationOptions.sound.rawValue |
-                JPAuthorizationOptions.providesAppNotificationSettings.rawValue)
-        }, delegate: self)
-
-        JPUSHService.registrationIDCompletionHandler { resCode, registrationID in
-            print("\(resCode) \(registrationID ?? "errorID")")
+        let notificationCenter = UNUserNotificationCenter.current()
+        notificationCenter.delegate = self
+        notificationCenter.requestAuthorization(options: [.alert, .badge, .sound]) { _, _ in
+            ()
         }
+//        notificationCenter.getNotificationSettings { _ in
+//            ()
+//        }
 
-        JPUSHService.setAlias("wenyou", completion: { iResCode, iAlias, seq in
-            print("\(iResCode) \(iAlias ?? "") \(seq)")
-        }, seq: 0)
-
-        JPUSHService.setup(withOption: launchOptions, appKey: "1bc78bc2376f2a3be66f97d5", channel: "Publish channel", apsForProduction: false)
+//        JPUSHService.register(forRemoteNotificationConfig: JPUSHRegisterEntity().then {
+//            $0.types = NSInteger(JPAuthorizationOptions.alert.rawValue |
+//                JPAuthorizationOptions.badge.rawValue |
+//                JPAuthorizationOptions.sound.rawValue |
+//                JPAuthorizationOptions.providesAppNotificationSettings.rawValue)
+//        }, delegate: self)
+//
+//        JPUSHService.registrationIDCompletionHandler { resCode, registrationID in
+//            print("\(resCode) \(registrationID ?? "errorID")")
+//        }
+//
+//        JPUSHService.setAlias("wenyou", completion: { iResCode, iAlias, seq in
+//            print("\(iResCode) \(iAlias ?? "") \(seq)")
+//        }, seq: 0)
+//
+//        JPUSHService.setup(withOption: launchOptions, appKey: "1bc78bc2376f2a3be66f97d5", channel: "Publish channel", apsForProduction: false)
         // "3757a70808011905377359a4"
+
         return true
     }
 
@@ -46,7 +56,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        JPUSHService.registerDeviceToken(deviceToken)
+//        JPUSHService.registerDeviceToken(deviceToken)
     }
 }
 
@@ -67,4 +77,15 @@ extension AppDelegate: JPUSHRegisterDelegate {
     func jpushNotificationAuthorization(_ status: JPAuthorizationStatus, withInfo info: [AnyHashable: Any]!) {
         ()
     }
+}
+
+extension AppDelegate: UNUserNotificationCenterDelegate {
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        completionHandler()
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        completionHandler([.sound, .list, .banner, .badge])
+    }
+    
 }
