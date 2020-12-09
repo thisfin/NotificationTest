@@ -28,19 +28,6 @@
 		6633A3EC2578175D00187EC5 /* NSObject-Rx in Frameworks */ = {isa = PBXBuildFile; productRef = 6633A3EB2578175D00187EC5 /* NSObject-Rx */; };
 		66383F2A2577E4C300EE4040 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 66383F292577E4C300EE4040 /* SnapKit */; };
 		66383F322578BA1500EE4040 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66383F312578BA1500EE4040 /* BaseViewController.swift */; };
-		66DD1E76257A2BCB00B4B61F /* jpush-ios-3.3.6.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DD1E74257A2BCB00B4B61F /* jpush-ios-3.3.6.a */; };
-		66DD1E77257A2BCB00B4B61F /* jcore-noidfa-ios-2.4.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DD1E75257A2BCB00B4B61F /* jcore-noidfa-ios-2.4.0.a */; };
-		66DD1E7C257A2C0D00B4B61F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DD1E7B257A2C0D00B4B61F /* CFNetwork.framework */; };
-		66DD1E7E257A2C1600B4B61F /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DD1E7D257A2C1600B4B61F /* CoreFoundation.framework */; };
-		66DD1E80257A2C1C00B4B61F /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DD1E7F257A2C1C00B4B61F /* CoreTelephony.framework */; };
-		66DD1E82257A2C2300B4B61F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DD1E81257A2C2300B4B61F /* SystemConfiguration.framework */; };
-		66DD1E84257A2C2C00B4B61F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DD1E83257A2C2C00B4B61F /* CoreGraphics.framework */; };
-		66DD1E86257A2C3200B4B61F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DD1E85257A2C3200B4B61F /* Security.framework */; };
-		66DD1E88257A2C4100B4B61F /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DD1E87257A2C4100B4B61F /* libz.tbd */; };
-		66DD1E8C257A2C5100B4B61F /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 660916742577B8AC00F42AD4 /* UserNotifications.framework */; };
-		66DD1E8E257A2C5B00B4B61F /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DD1E8D257A2C5B00B4B61F /* libresolv.tbd */; };
-		66DD1E93257A2C6100B4B61F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DD1E92257A2C6100B4B61F /* WebKit.framework */; };
-		66DD1EA1257A2EED00B4B61F /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 66DD1EA0257A2EED00B4B61F /* Test.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,9 +81,6 @@
 		660916902577B8D500F42AD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6609169A2577B90F00F42AD4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		66383F312578BA1500EE4040 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		66DD1E73257A2BCB00B4B61F /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
-		66DD1E74257A2BCB00B4B61F /* jpush-ios-3.3.6.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jpush-ios-3.3.6.a"; sourceTree = "<group>"; };
-		66DD1E75257A2BCB00B4B61F /* jcore-noidfa-ios-2.4.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "jcore-noidfa-ios-2.4.0.a"; sourceTree = "<group>"; };
 		66DD1E7B257A2C0D00B4B61F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		66DD1E7D257A2C1600B4B61F /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		66DD1E7F257A2C1C00B4B61F /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -107,9 +91,6 @@
 		66DD1E8D257A2C5B00B4B61F /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 		66DD1E92257A2C6100B4B61F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		66DD1E96257A2CD100B4B61F /* NotificationTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NotificationTest.entitlements; sourceTree = "<group>"; };
-		66DD1E9E257A2EED00B4B61F /* NotificationTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NotificationTest-Bridging-Header.h"; sourceTree = "<group>"; };
-		66DD1E9F257A2EED00B4B61F /* Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
-		66DD1EA0257A2EED00B4B61F /* Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,25 +98,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66DD1E93257A2C6100B4B61F /* WebKit.framework in Frameworks */,
-				66DD1E8E257A2C5B00B4B61F /* libresolv.tbd in Frameworks */,
-				66DD1E8C257A2C5100B4B61F /* UserNotifications.framework in Frameworks */,
-				66DD1E88257A2C4100B4B61F /* libz.tbd in Frameworks */,
-				66DD1E86257A2C3200B4B61F /* Security.framework in Frameworks */,
-				66DD1E84257A2C2C00B4B61F /* CoreGraphics.framework in Frameworks */,
-				66DD1E82257A2C2300B4B61F /* SystemConfiguration.framework in Frameworks */,
-				66DD1E80257A2C1C00B4B61F /* CoreTelephony.framework in Frameworks */,
-				66DD1E7E257A2C1600B4B61F /* CoreFoundation.framework in Frameworks */,
-				66DD1E7C257A2C0D00B4B61F /* CFNetwork.framework in Frameworks */,
 				6633A3E0257816FF00187EC5 /* RxSwift in Frameworks */,
 				6633A3E6257816FF00187EC5 /* RxBlocking in Frameworks */,
 				6609166C2577AE9200F42AD4 /* Then in Frameworks */,
 				6633A3E4257816FF00187EC5 /* RxCocoa in Frameworks */,
 				6633A3E2257816FF00187EC5 /* RxRelay in Frameworks */,
-				66DD1E77257A2BCB00B4B61F /* jcore-noidfa-ios-2.4.0.a in Frameworks */,
 				6633A3EC2578175D00187EC5 /* NSObject-Rx in Frameworks */,
 				66383F2A2577E4C300EE4040 /* SnapKit in Frameworks */,
-				66DD1E76257A2BCB00B4B61F /* jpush-ios-3.3.6.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,11 +159,7 @@
 				660916522577A10100F42AD4 /* SceneDelegate.swift */,
 				660916542577A10100F42AD4 /* ViewController.swift */,
 				660916592577A10300F42AD4 /* Assets.xcassets */,
-				66DD1E72257A2B9200B4B61F /* JPush */,
 				6609165B2577A10300F42AD4 /* LaunchScreen.storyboard */,
-				66DD1E9F257A2EED00B4B61F /* Test.h */,
-				66DD1EA0257A2EED00B4B61F /* Test.m */,
-				66DD1E9E257A2EED00B4B61F /* NotificationTest-Bridging-Header.h */,
 			);
 			path = NotificationTest;
 			sourceTree = "<group>";
@@ -234,16 +199,6 @@
 				660916902577B8D500F42AD4 /* Info.plist */,
 			);
 			path = NotificationTestService;
-			sourceTree = "<group>";
-		};
-		66DD1E72257A2B9200B4B61F /* JPush */ = {
-			isa = PBXGroup;
-			children = (
-				66DD1E75257A2BCB00B4B61F /* jcore-noidfa-ios-2.4.0.a */,
-				66DD1E74257A2BCB00B4B61F /* jpush-ios-3.3.6.a */,
-				66DD1E73257A2BCB00B4B61F /* JPUSHService.h */,
-			);
-			path = JPush;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,7 +349,6 @@
 				66383F322578BA1500EE4040 /* BaseViewController.swift in Sources */,
 				660916552577A10100F42AD4 /* ViewController.swift in Sources */,
 				660916512577A10100F42AD4 /* AppDelegate.swift in Sources */,
-				66DD1EA1257A2EED00B4B61F /* Test.m in Sources */,
 				660916532577A10100F42AD4 /* SceneDelegate.swift in Sources */,
 				6609169B2577B90F00F42AD4 /* HomeViewController.swift in Sources */,
 			);
@@ -590,7 +544,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = win.opencode.NotificationTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "NotificationTest/NotificationTest-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -620,7 +574,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = win.opencode.NotificationTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "NotificationTest/NotificationTest-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
